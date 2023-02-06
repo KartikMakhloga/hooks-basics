@@ -1,4 +1,4 @@
-// <-- interview questions -->
+//                                      <-- interview questions -->
 
 // Q1- how can we use useEffect as componentDidMount?
 // Ans -> By passing the empty array as dependency_Array.Ans
@@ -20,7 +20,7 @@ function App() {
   let [count, setCount] = useState(0); // ye line re-render mei skip hojati hai
 
 
-  // Case: 1 --> after first render
+  //                                     Case: 1 --> after first render
 
   //useEffect(function,dependency_Array)
   //passing empty array in dependency_Array useEffect works like as componentDidMount works in class component
@@ -31,7 +31,7 @@ function App() {
   },[]);
   
   
-  // Case: 2 --> after every render including first render
+  //                           Case: 2 --> after every render including first render
   
   useEffect(()=>{
     console.log("useEffect is case 2 working")
