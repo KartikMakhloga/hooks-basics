@@ -1,16 +1,14 @@
-import { SomeContext } from "./A";
+import { SomeContext,SomeContext2 } from "./A";
+import { useContext } from "react";
 
 function D() {
+   let name = useContext(SomeContext)
+   let lName = useContext(SomeContext2)
+
   return (
     // here we will get consumer component which expects a function where we can pass the value as
     // a parameter
-    <div>
-      <SomeContext.Consumer>
-        {(value) => {
-          return <h1>{value}</h1>;
-        }}
-      </SomeContext.Consumer>
-    </div>
+   <h1>{`${name} ${lName}`}</h1>
   );
 }
 
