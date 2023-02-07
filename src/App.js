@@ -38,6 +38,10 @@ function App() {
     // setCount (count + 1) will create infinite loop problem
   });
 
+  //                  Case: 3 --> it re-render when the dependency array contains the state variable
+
+
+  
 
   return (
     <div>
